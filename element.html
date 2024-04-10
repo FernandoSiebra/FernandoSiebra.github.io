@@ -1,26 +1,193 @@
 <div class="cidade-zoom_container">
-    <div id="cidade-zoom_zoom" class="cidade-zoom_magnify-wrapper">
-        <img src="city2_prepared.png" id="cidade-zoom_container_main-img" />
-        <div id="cidade-zoom_container_large-img"></div>
+    <div id="cidade-zoom_screen" style="display: none;">
+        <div id="cidade-zoom_zoom" class="cidade-zoom_magnify-wrapper">
+            <img src="https://fernandosiebra.github.io/city2_prepared.png" id="cidade-zoom_container_main-img" />
+            <div id="cidade-zoom_container_large-img"></div>
+        </div>
+    </div>
+    <div id="cidade-zoom_mobile" style="display: none;">
+        <img src="https://fernandosiebra.github.io/city2_prepared.png" width="800" height="500" usemap="#cidade-zoom_maps" id="cidade-zoom_container_main-img" />
+        <map name="cidade-zoom_maps">
+            <area
+              shape="circle"
+              coords="130,147,30"
+              onclick="cidadeZoom_openLetter('A'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+            <area
+              shape="circle"
+              coords="330,150,30"
+              onclick="cidadeZoom_openLetter('C'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+            <area
+              shape="circle"
+              coords="250,280,30"
+              onclick="cidadeZoom_openLetter('H'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+
+              <area
+              shape="circle"
+              coords="250,90,30"
+              onclick="cidadeZoom_openLetter('K'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+
+            <area
+              shape="circle"
+              coords="330,60,30"
+              onclick="cidadeZoom_openLetter('E'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+            
+            <area
+              shape="circle"
+              coords="390,40,30"
+              onclick="cidadeZoom_openLetter('D'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+
+              <area
+              shape="circle"
+              coords="470,400,20"   
+              onclick="cidadeZoom_openLetter('J'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+
+            
+            <area
+              shape="circle"
+              coords="490,390,20"   
+              onclick="cidadeZoom_openLetter('I'); return false;"
+              href=""
+              target="_blank"
+              alt="" />
+
+            <area
+              shape="circle"
+              coords="510,380,20"   
+              onclick="cidadeZoom_openLetter('G'); return false;"
+              href=""
+              target="_blank"
+              alt="" />
+
+            <area
+              shape="circle"
+              coords="530,370,20"   
+              onclick="cidadeZoom_openLetter('A'); return false;"
+              href="#"
+              target="_blank"
+              alt="" />
+
+
+           
+
+            <area
+              shape="circle"
+              coords="600,170,30"
+              onclick="cidadeZoom_openLetter('F'); return false;"
+              href=""
+              target="_blank"
+              alt="" />
+            
+              <area
+              shape="circle"
+              coords="640,120,30"
+              onclick="cidadeZoom_openLetter('A'); return false;"
+              href=""
+              target="_blank"
+              alt="" />
+
+              <area
+              shape="circle"
+              coords="720,270,30"
+              onclick="cidadeZoom_openLetter('F'); return false;"
+              href=""
+              target="_blank"
+              alt="" />
+            
+        </map>
     </div>
     <div id="cidade-zoom_overlay"></div>
     <div id="cidade-zoom_modal">
         <div id="cidade-zoom_modal_content">
             <button id="cidade-zoom_model_close_button" onclick="document.querySelector('.cidade-zoom_container').classList.remove('cidade-zoom_modal_open');">X</button>
             <a href="https://klimatix.com/chiller-scroll-rlac-s/" target="_blank">
-                <img src="letters/A.png" width="50%" height="auto" alt="" />
+                <img src="https://fernandosiebra.github.io/letters/A.png" class="cidade-zoom_popup_letterA" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/self-contained-crac-cpa/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/C.png" class="cidade-zoom_popup_letterC" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://www.mecalor.com/portfolio/sistema-integrado/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/D.png" class="cidade-zoom_popup_letterD" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/chiller-oil-free/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/E.png" class="cidade-zoom_popup_letterE" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/chiller-oil-free/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/F.png" class="cidade-zoom_popup_letterF" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://www.mecalor.com/portfolio/drycooler-aludry/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/G.png" class="cidade-zoom_popup_letterG" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/variable-load-chiller-vlc/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/H.png" class="cidade-zoom_popup_letterH" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/contato/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/I.png" class="cidade-zoom_popup_letterI" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/contato/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/J.png" class="cidade-zoom_popup_letterJ" style="display: none;" width="50%" height="auto" alt="" />
+            </a>
+            <a href="https://klimatix.com/contato/" target="_blank">
+                <img src="https://fernandosiebra.github.io/letters/K.png" class="cidade-zoom_popup_letterK" style="display: none;" width="50%" height="auto" alt="" />
             </a>
         </div>
-    </div>
+        </div>
+    </div>  
 </div>
 <style>
-   .cidade-zoom_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        overflow: scroll;
+
+    @media only screen and (min-width: 800px) {
+        #cidade-zoom_screen { display: block !important; }   
+        .cidade-zoom_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: scroll;
+        }
     }
+
+    @media only screen and (max-width: 799px) {
+        .cidade-zoom_container {
+            display: block;
+            overflow: scroll;
+            height: 100vh;
+            width: 100%;
+        }
+        #cidade-zoom_mobile { 
+            display: block !important; 
+            /* justify-content: flex-start; */
+            overflow: scroll;
+            width: 100%;
+            height: 100%;
+        }   
+        /* #cidade-zoom_mobile img {
+          
+        } */
+        
+    }
+
+   
     .cidade-zoom_magnify-wrapper {
         position: relative;
         max-height: 100vh;
@@ -30,7 +197,7 @@
     }
 
     .cidade-zoom_magnify-wrapper #cidade-zoom_container_large-img {
-        background: url("city2_prepared.png")
+        background: url("https://fernandosiebra.github.io/city2_prepared.png")
         no-repeat #fff;
         width: 300px;
         height: 300px;
@@ -135,15 +302,88 @@
     document.getElementsByTagName("body")[0].style.cursor = 'default';
     console.log(xpercResult, ypercResult);
     cidadeZoom_letter = null;
-    if( 
-        xpercResult > 7.5 && xpercResult < 10.5 
-        && ypercResult > 22.5 && ypercResult < 27.4
-    )
+
+    function cursorPointer() { document.getElementsByTagName("body")[0].style.cursor = 'pointer'; }
+
+
+    var conditionLetterA_1 = xpercResult > 7.5 && xpercResult < 10.5 && ypercResult > 22.5 && ypercResult < 27.4;
+    var conditionLetterA_2 = xpercResult > 85.4 && xpercResult < 88.3 && ypercResult > 13.5 && ypercResult < 18.4;
+    var conditionLetterA_3 = xpercResult > 69.6 && xpercResult < 72.4 && ypercResult > 79.7 && ypercResult < 84.8;
+    var conditionLetterC = xpercResult > 36.9 && xpercResult < 39.6 && ypercResult > 23.4 && ypercResult < 28.5;
+    var conditionLetterD = xpercResult > 48.7 && xpercResult < 51.3 && ypercResult > -7.3 && ypercResult < -2.3;
+    var conditionLetterE = xpercResult > 39.8 && xpercResult < 42.5 && ypercResult > -3.9 && ypercResult < 0.9;
+    var conditionLetterF_1 = xpercResult > 78.7 && xpercResult < 81.4 && ypercResult > 28.7 && ypercResult < 33.5;
+    var conditionLetterF_2 = xpercResult > 96.5 && xpercResult < 99.4 && ypercResult > 54.9 && ypercResult < 60;
+    var conditionLetterG = xpercResult > 66.5 && xpercResult < 69.1 && ypercResult > 82.7 && ypercResult < 87.6;
+    var conditionLetterH = xpercResult > 28.3 && xpercResult < 31 && ypercResult > 52.1 && ypercResult < 57.4;
+    var conditionLetterI = xpercResult > 63.5 && xpercResult < 66.4 && ypercResult > 85.1 && ypercResult < 90.3;
+    var conditionLetterJ = xpercResult > 60.3 && xpercResult < 63.4 && ypercResult > 88 && ypercResult < 93.1;
+    var conditionLetterK = xpercResult > 26.4 && xpercResult < 29.4 && ypercResult > 9.2 && ypercResult < 14.4;
+
+    console.log(xpercResult, ypercResult);
+
+    /// LETTER A
+    if( conditionLetterA_1 || conditionLetterA_2 || conditionLetterA_3 )
     {
-        document.getElementsByTagName("body")[0].style.cursor = 'pointer';
+        cursorPointer(); 
         cidadeZoom_letter = 'A';
-        
     }
+
+    /// LETTER C
+    if( conditionLetterC ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'C';
+    }
+
+    /// LETTER D
+    if( conditionLetterD ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'D';
+    }
+
+    /// LETTER E
+    if( conditionLetterE ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'E';
+    }
+
+    /// LETTER F
+    if( conditionLetterF_1 || conditionLetterF_2 ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'F';
+    }
+
+    /// LETTER G
+    if( conditionLetterG ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'G';
+    }
+
+    /// LETTER H
+    if( conditionLetterH ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'H';
+    }
+    
+    /// LETTER I
+    if( conditionLetterI ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'I';
+    }
+
+    /// LETTER J
+    if( conditionLetterJ ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'J';
+    }
+
+    /// LETTER K
+    if( conditionLetterK ){ 
+        cursorPointer(); 
+        cidadeZoom_letter = 'K';
+    }
+
+    
 
     // Move the magnifying glass with the mouse movement.
     style.left = x - 150 + "px";
@@ -165,6 +405,15 @@ document.getElementById("cidade-zoom_zoom").addEventListener("click", function()
 function cidadeZoom_openLetter(letter)
 {
     document.querySelector('.cidade-zoom_container').classList.add('cidade-zoom_modal_open');
+    document.querySelectorAll('#cidade-zoom_modal_content img').forEach(function(el, i){
+        console.log(el);
+        el.style.display = 'none';
+    });
+    //cidade-zoom_popup_letterA
+    var popupLetter = '.cidade-zoom_popup_letter' + letter;
+    console.log(popupLetter);
+    document.querySelector(popupLetter).style.display = 'inline-block';
+
 }
 
 
